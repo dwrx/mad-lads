@@ -13,7 +13,7 @@ const Leaderboard: React.FC = () => {
   const fetchLeaderboard = async () => {
     try {
       setLoading(true);
-      const response = await axios.get("http://localhost:8888/api/v1/leaderboard", {
+      const response = await axios.get("https://lads.miso.one/api/v1/leaderboard", {
         params: { page, limit, search },
       });
       setLeaderboard(response.data);
@@ -25,7 +25,7 @@ const Leaderboard: React.FC = () => {
 
   const fetchTotalStakingPoints = async () => {
     try {
-      const response = await axios.get("http://localhost:8888/api/v1/total-staking-points");
+      const response = await axios.get("https://lads.miso.one/api/v1/total-staking-points");
       setTotalStakingPoints(response.data.total_staking_points);
     } catch (error) {
       console.error("Error fetching total staking points:", error);
