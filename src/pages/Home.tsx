@@ -5,7 +5,7 @@ import { backpackLaunchParticipants } from "../participants/backpackLaunchPartic
 import { pythiaDropParticipants } from "../participants/pythiaDropParticipants";
 import { wormholeDropParticipants } from "../participants/wormholeDropParticipants";
 import { tensorRaffleParticipants } from "../participants/tensorRaffleParticipants";
-import "./Home.css";
+import "../styles.css";
 
 interface Mint {
   mint: string;
@@ -69,7 +69,6 @@ const Home: React.FC = () => {
 
   return (
     <div className="container">
-      <h2>Lads on top</h2>
       <input
         className="search-bar"
         type="text"
