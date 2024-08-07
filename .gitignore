@@ -1,4 +1,5 @@
 # backend
+backend/dist/
 backend/node_modules
 backend/holders.json
 backend/nft_data.db
